@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        /**Arrow function Cannot be used as methods
+          *Arrow function has No binding of arguments
+          *Arrow function Cannot be used as constructors
+          *Arrow function Cannot be used as generators**/
+
+
+        // let age = prompt("what is your age?");
+        // let welcome = (age < 20) ?
+        //  () => alert('oops, sorry buddy!'):
+        //  () => alert('welcome, buddy!');
+
+        //  welcome();
+
+
+        /** Rewrite the arrow function
+         * function ask(question, yes, no) {
+         * if (confirm(question)) yes();
+         * else no();
+         * } 
+
+         * ask(
+         * "Do you agree?",
+         * function() { alert("You agreed."); },
+         * function() { alert("You canceled the execution."); }
+         * );**/
+
+    let ask = (question, yes, no) => confirm(question) ?
+    yes() : no();
+    ask(
+        'do you agree?',
+        () => console.log('you agreed'),
+        () => console.log('you canceled the execution'),
+    );
+    </script>
+</body>
+
+</html>

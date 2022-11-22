@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nullish Coalescing</title>
+</head>
+
+<body>
+    <script>
+        // || returns the first truthy value.
+        // ?? returns the first defined value.
+
+
+
+        // let a
+        // let b
+        // alert(a ?? b);
+
+        let num1 = null
+        let num2 = null
+
+        let mull = (num1) + (num2 ?? 2);
+        //alert(mull);
+        let height;
+        height = null ?? 200
+        //alert(height);
+
+
+        const nullValue = null;
+        const emptytext = " ";
+        const someNumber = 23;
+
+        const valA = nullValue ?? "default for A";
+        const valB = emptytext ?? "default for B";
+        const valC = someNumber ?? 0;
+
+        alert(valA)
+    </script>
+</body>
+
+</html>

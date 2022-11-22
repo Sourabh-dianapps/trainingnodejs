@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <script>
+        /**showMessage(..)     // shows a message
+           getAge(..)          // returns the age (gets it somehow)
+           calcSum(..)         // calculates a sum and returns the result
+           createForm(..)      // creates a form (and usually returns it)
+           checkPermission(..) // checks a permission, returns true/false **/
+
+
+
+
+        // local variables
+        // function showMessage() {
+        //     let message = "Hello, This is my first javascript program!";
+        //     alert(message);
+        // }
+        // showMessage();
+        // //alert(message);
+
+
+
+        // function showMessage(from, text){
+        //     from = '*' + from + '*';
+        //     alert (from + ': ' + text);
+        // }
+        // let from ="sourabh";
+        // showMessage(from, "hello");
+        // //alert(from);
+
+        function checkAge(age) {
+            if (age >= 18) {
+                return true;
+            } else {
+                return confirm('do you have permissions from your parents? ')
+            }
+        }
+        let age = +prompt('how old are you?', 18);
+        if (checkAge(age)) {
+            alter('wellcome, please enjoy!');
+        } else {
+            alert('sorry, you are too small for this!');
+        }
+
+        
+    </script>
+</body>
+
+</html>
