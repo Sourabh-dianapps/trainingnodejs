@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbol Type</title>
+</head>
+<body>
+    <script>
+        // Symbol type will be unique key.
+        let lib = {
+            name: "srv",
+        };
+        // The id can be changed.
+        lib["id"] = 9;
+        lib["id"] = 68;
+         
+        // This both id can't be change, Symbol creates unique key id.
+        lib[Symbol("id")] = 345;
+        lib[Symbol("id")] = 543;
+
+        console.log(lib);
+
+    </script>
+</body>
+</html>
